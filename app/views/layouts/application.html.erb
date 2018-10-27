@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deckhand</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><%= link_to "Home", root_path%></li>
+        <li><%= link_to "FAQ", simple_pages_faq_path%></li>
+        <li><%= link_to "Contact", simple_pages_contact_path%></li>
+      </ul>
+    </nav>
+
+    <%= yield %>
+
+    <footer>
+      &copy; 2017 Deckhand
+    </footer>
+  </body>
+</html>
